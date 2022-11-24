@@ -36,7 +36,6 @@
 </head>
 
 <body>
-
     <!-- Navigation section-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -44,7 +43,6 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-                Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -64,13 +62,22 @@
             {% endif %}
         </div>
     </nav>
+    <div class="masthead">
+        <div class="px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <img class="mx-2" src="/static/assets/images/bt-logo.png" alt="Blue Turtle logo">
 
-    {% block content %}
+                    {% block content %}
 
-    <!-- Page content here -->
+                    <!-- Page content here -->
 
-    {% endblock content %}
+                    {% endblock content %}
 
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Social links-->
     <section class="contact-section">
         <div class="social d-flex justify-content-center">
