@@ -11,11 +11,11 @@
     <h2 class="mx-auto mt-2 mb-2">Choose your required option below,
         pay for your chosen service
         and we will arrange collection!</h2>
-            <a class="btn btn-secondary" href="#">Brake Service</a></li>
-            <a class="btn btn-secondary" href="#">Suspension Service</a></li>
-            <a class="btn btn-secondary" href="#">Full Service</a></li>
-            <a class="btn btn-secondary" href="#">Wheel Build</a></li>
-            <a class="btn btn-secondary" href="#">Gear Setup</a></li>
+            <a class="btn btn-secondary" href="{% url 'services' %}">Brake Service</a></li>
+            <a class="btn btn-secondary" href="{% url 'services' %}">Suspension Service</a></li>
+            <a class="btn btn-secondary" href="{% url 'services' %}">Full Service</a></li>
+            <a class="btn btn-secondary" href="{% url 'services' %}">Wheel Build</a></li>
+            <a class="btn btn-secondary" href="{% url 'services' %}">Gear Setup</a></li>
     {% else %}
         <h2 class="mx-auto mt-3 mb-3">Here at <strong>Blue Turtle</strong> we take away the hassle of
             servicing your pride and joy.
