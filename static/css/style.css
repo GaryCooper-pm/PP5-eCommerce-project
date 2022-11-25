@@ -195,6 +195,16 @@ body {
         color: rgba(253, 231, 76, 0.75);
     }
   }
+
+  .card-body {
+    background-color: #262626;
+    color: #5bc0eb;
+    border-radius: 0 2rem 0 2rem;
+  }
+  
+  .card {
+    border: #5bc0eb;
+  }
   
   /*------------------------------ Link overrides */
   a {
