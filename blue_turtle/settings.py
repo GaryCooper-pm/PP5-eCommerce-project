@@ -34,7 +34,8 @@ else:
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-cqg#g#)$zgu=_5k=bx^r=%w&zz2mv2w)sy_$rr*it*(5u$gnf8')
 
-ALLOWED_HOSTS = ['blueturtle.herokuapp.com', 'localhost', 'localhost:8000', '127.0.0.1', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['blueturtle.herokuapp.com', 'localhost',
+                 'localhost:8000', '127.0.0.1', '127.0.0.1:8000']
 
 # Application definition
 
@@ -58,6 +59,7 @@ INSTALLED_APPS = [
     # Custom apps
     'home',
     'services',
+    'payments',
 
     # Static file storage
     'storages',
@@ -221,6 +223,10 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+# Stripe Payments settings
+STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
