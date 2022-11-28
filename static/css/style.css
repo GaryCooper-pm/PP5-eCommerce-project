@@ -218,14 +218,15 @@ body {
   
   /*------------------------------ Button styling (bootstrap override) */
   .btn-secondary {
-    color: #8daa91;
-    background: linear-gradient(to top, rgba(94, 93, 92, 0.3) 0%, rgba(69, 54, 67, 0.7) 75%, #000 100%);
+    color: rgba(253, 231, 76, 0.75);
+    background: linear-gradient(to top, rgba(91, 192, 235, 0.7) 0%, rgba(2, 103, 193, 0.8) 75%, rgb(2, 103, 193, 0.8) 100%);
+    border-radius: 30px;
     border-color: #000;
   }
   
   .btn-secondary:hover {
     color: #fff;
-    background: linear-gradient(to bottom, rgba(94, 93, 92, 0.3) 0%, rgba(69, 54, 67, 0.7) 75%, #000 100%);
+    background: linear-gradient(to bottom, rgba(91, 192, 235, 0.7) 0%, rgba(2, 103, 193, 0.8) 75%, rgb(2, 103, 193, 0.8) 100%);
     border-color: #000;
   }
   
