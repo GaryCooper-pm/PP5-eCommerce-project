@@ -3,20 +3,16 @@
 
 {% block content %}
 
-{% for service in services %}
-<div class="row-6 mt-3">
-    <div class="col-5">
-
-            <div class="card-body">
-                <h5 class="card-title">{{ service.servicename }}</h5>
-                <p class="card-text">{{ service.description }}</p>
-                <p class="card-text">Price - £{{ service.price }}</p>
-                <a href="#" class="btn btn-secondary">Pay Now</a>
-            </div>
-
-    </div>
-</div>
+<a class="btn btn-secondary" href="{% url 'account_login' %}">Login</a>
+<h2 class="mx-auto mt-2 mb-2">Please pick a service option below,
+    pay for your chosen service
+    and we will come to you!</h2>
+    {% for object in object_list %}
+    <a class="btn btn-secondary" href="{% url 'services_detail' object.id %}">{{ object }}</a></li>
 
 {% endfor %}
+<br>
+<a class="btn btn-danger" href="{% url 'home' %}">GO BACK</a>
+
 
 {% endblock %}

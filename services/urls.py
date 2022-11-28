@@ -1,11 +1,9 @@
 from django.urls import path
-from . import views
+from .views import SingleServiceDetail, AllServicesView
 
+APP_NAME = 'services'
 urlpatterns = [
-    path('', views.ServicesView.as_view(), name='services'),
-    path('brake/', views.ServicesView.as_view(), name='brake'),
-    path('suspension/', views.ServicesView.as_view(), name='suspension'),
-    path('full/', views.ServicesView.as_view(), name='full'),
-    path('wheel/', views.ServicesView.as_view(), name='wheel'),
-    path('gear/', views.ServicesView.as_view(), name='gear'),
+    path('', AllServicesView.as_view(), name='services'),
+    path('services_detail/<int:pk>/', SingleServiceDetail.as_view(),
+         name='services_detail'),
 ]

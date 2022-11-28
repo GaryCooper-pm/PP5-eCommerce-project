@@ -1,11 +1,16 @@
-from django.shortcuts import render
-from django.urls import reverse_lazy
-from django.views.generic.list import ListView
+from django.views.generic import DetailView, ListView
 from .models import Services
 
 
-class ServicesView(ListView):
+class AllServicesView(ListView):
+    """ Service list view for all available services"""
     model = Services
-    template_name = 'services/full.html'
-    success_url = reverse_lazy('full')
+    template_name = 'services/services.html'
     context_object_name = 'services'
+    queryset = Services.objects.all().order_by('service_name')
+
+
+class SingleServiceDetail(DetailView):
+    """ SingleService view to allow users to view the
+        individual service chosen in more detail"""
+    model = Services
