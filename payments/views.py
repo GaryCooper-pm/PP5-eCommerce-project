@@ -43,9 +43,12 @@ def create_checkout_session(request):
                 mode='payment',
                 line_items=[
                     {
-                        'price': '',
+                        'price': (settings.STRIPE_PRICE_ID1,
+                                  settings.STRIPE_PRICE_ID2,
+                                  settings.STRIPE_PRICE_ID3,
+                                  settings.STRIPE_PRICE_ID4,
+                                  settings.STRIPE_PRICE_ID5,),
                         'quantity': 1,
-                        'currency': 'gbp',
                     }
                 ],
                 customer_email=request.user.email
