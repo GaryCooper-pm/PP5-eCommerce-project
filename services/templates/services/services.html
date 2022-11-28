@@ -10,8 +10,8 @@
     {% for object in object_list %}
     <a class="btn btn-secondary" href="{% url 'services_detail' object.id %}">{{ object }}</a></li>
 
-{% endfor %}
-<br>
+    {% endfor %}
+    <br>
 <a class="btn btn-danger" href="{% url 'services' %}">GO BACK</a>
 
 
