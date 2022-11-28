@@ -12,15 +12,7 @@
     <h2 class="mx-auto mt-2 mb-2">Choose your required option below,
         pay for your chosen service
         and we will arrange collection!</h2>
-            <!-- <a class="btn btn-secondary" href="">Brake Service</a></li>
-            <a class="btn btn-secondary" href="">Suspension Service</a></li>
-            <a class="btn btn-secondary" href="">Full Service</a></li>
-            <a class="btn btn-secondary" href="">Wheel Build</a></li>
-            <a class="btn btn-secondary" href="">Gear Setup</a></li> -->
-    <!-- Not currently working -->
-    {% for object in object_list %}
-        <a class="btn btn-secondary" href="{% url 'services_detail' object.id %}">{{ object }}</a></li>
-    {% endfor %}
+        <a class="btn btn-secondary" href="{% url 'services' %}">Services we offer</a>
 
     {% else %}
         <h2 class="mx-auto mt-3 mb-3">Here at <strong>Blue Turtle</strong> we take away the hassle of
