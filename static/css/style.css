@@ -124,6 +124,24 @@ body {
   }
   
   /*------------------------------ Nav styling imported from bootstrap (modified) */
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #5bc0eb;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+  }
+  
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
   #mainNav {
     min-height: 3.5rem;
     background-color: #c1eeff;
@@ -220,7 +238,7 @@ body {
   .btn-secondary {
     color: rgba(253, 231, 76, 0.75);
     background: linear-gradient(to top, rgba(91, 192, 235, 0.7) 0%, rgba(2, 103, 193, 0.8) 75%, rgb(2, 103, 193, 0.8) 100%);
-    border-radius: 30px;
+    border-radius: 0.2rem;
     border-color: #000;
   }
   
