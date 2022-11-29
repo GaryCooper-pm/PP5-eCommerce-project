@@ -27,6 +27,15 @@ body {
     color: #fde74c;
   }
   
+  strong {
+    color: #255C99;
+  }
+
+  hr {
+    color: #5bc0eb;
+    border: solid 2px #fde74c;
+  }
+
   p {
     margin-bottom: 1rem;
     color: #5bc0eb;
@@ -56,13 +65,9 @@ body {
   .masthead h1,
   .masthead .h1 {
     font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.8rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    letter-spacing: 0.35rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.15rem;
   }
   
   .masthead h2,
@@ -76,6 +81,12 @@ body {
         display: none;
       }
   }
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   
   @media (max-width: 550px) {
     .main-image {
@@ -85,13 +96,19 @@ body {
         opacity: 0.6;
       }
   }
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
   
   @media (min-width: 768px) {
   
     .masthead h1,
     .masthead .h1 {
-      font-size: 4rem;
-      line-height: 4rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
     }
   }
   
@@ -103,10 +120,9 @@ body {
   
     .masthead h1,
     .masthead .h1 {
-      font-size: 5rem;
-      line-height: 4.5rem;
-      letter-spacing: 0.35rem;
-      padding-top: 20px;
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.15rem;
     }
   
     .masthead h2,
@@ -236,7 +252,7 @@ body {
   }
   
   /*------------------------------ Button styling (bootstrap override) */
-  .btn-secondary {
+    .btn-secondary {
     color: rgba(253, 231, 76, 0.75);
     background: linear-gradient(to top, rgba(91, 192, 235, 0.7) 0%, rgba(2, 103, 193, 0.8) 75%, rgb(2, 103, 193, 0.8) 100%);
     border-radius: 0.2rem;
@@ -266,6 +282,10 @@ body {
     margin-top: 15px;
     letter-spacing: 0.1rem;
     border: 0;
+  }
+
+  .login {
+    min-width: 9rem;
   }
 
   /*------------------------------ Form styling */
