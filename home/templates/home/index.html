@@ -6,7 +6,8 @@
         alt="image of a bicycle mechanic">
     <img class="main-image mx-auto mt-4 mb-3" src="{% static 'assets/images/stylish-bicycle-mechanic.jpg' %}"
         alt="image of a bicycle mechanic">
-    <br>
+        <br>
+        <h2 class="mx-auto mt-2 mb-2">Welcome back, {{ user.username }}</h2>
     {% if request.user.is_authenticated %}
         <h2 class="mx-auto mt-2 mb-2">Choose your required option below,
         pay for your chosen service
