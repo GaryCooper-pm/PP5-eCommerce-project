@@ -27,6 +27,7 @@ urlpatterns = [
 
 """ Error handler URL's """
 
-HANDLER500 = "blueturtle.views.custom_500_error"
-HANDLER404 = "blueturtle.views.custom_page_not_found"
-HANDLER403 = "blueturtle.views.custom_403_error"
+HANDLER500 = "blue_turtle.views.custom_500_error"
+HANDLER404 = "blue_turtle.views.custom_page_not_found"
+HANDLER403 = "blue_turtle.views.custom_403_error"
+HANDLER405 = "blue_turtle.views.custom_405_error"
