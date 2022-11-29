@@ -24,3 +24,9 @@ urlpatterns = [
     path('payments/', include('payments.urls')),
     path('profiles/', include('profiles.urls')),
 ]
+
+""" Error handler URL's """
+
+HANDLER500 = "blueturtle.views.custom_500_error"
+HANDLER404 = "blueturtle.views.custom_page_not_found"
+HANDLER403 = "blueturtle.views.custom_403_error"
