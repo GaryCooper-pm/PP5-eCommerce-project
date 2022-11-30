@@ -7,8 +7,7 @@ from crispy_forms.layout import Submit
 class UserForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ('user',
-                  'first_name',
+        fields = ('first_name',
                   'last_name',
                   'email',
                   'street_address1',

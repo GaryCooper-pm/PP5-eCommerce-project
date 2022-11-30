@@ -315,9 +315,13 @@ label.requiredField {
 .textinput {
   border-radius: 10px;
   min-width: 180px;
-  width: 50%;
+  width: 85%;
   height: 40px;
   text-align: center;
+}
+
+.modal-content {
+  background-color: #5bc0eb;
 }
   
   /*------------------------------ Social/contact links */
