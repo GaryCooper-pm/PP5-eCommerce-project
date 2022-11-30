@@ -39,6 +39,7 @@ body {
   p {
     margin-bottom: 1rem;
     color: #5bc0eb;
+    font-size: 16px;
   }
 
   .border-dark {
@@ -296,6 +297,41 @@ body {
     min-width: 9rem;
   }
 
+  /*------------------------------ Mailchimp overrides */
+#mc-embedded-subscribe {
+  width: 16rem !important;
+  margin: 0 !important;
+}
+
+#mc_embed_signup form {
+  padding: 0 !important;
+}
+
+#mc_embed_signup input {
+  border: none !important;
+}
+
+#mc_embed_signup {
+  background: #262626;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+#mc-embedded-subscribe-form {
+  font-family: 'Roboto', sans-serif;
+}
+
+#mc_embed_signup h2 {
+  font-size: 1.4rem !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+#mc_embed_signup .mc-field-group input {
+  text-indent: 6% !important;
+}
+
   /*------------------------------ Form styling */
 label {
   display: inline-block;
@@ -357,7 +393,8 @@ label.requiredField {
   
   /*------------------------------ Footer styling */
   .footer {
-    padding: 1.5rem;
-    color: #262626;
-    background-color: #5bc0eb;
+    padding: 1rem;
+    color:#5bc0eb;
+    background-color: #262626;
+    opacity: 0.8;
   }
