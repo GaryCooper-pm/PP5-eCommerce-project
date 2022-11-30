@@ -40,7 +40,15 @@ body {
     margin-bottom: 1rem;
     color: #5bc0eb;
   }
-  
+
+  .border-dark {
+    border-radius: 0.25rem;
+    color: #5bc0eb;
+    background-color: #255C99;
+    padding: 5px;
+  }
+
+    
   /*------------------------------ Image, Masthead and headings with media queries */
   .main-image {
     border-radius: 1rem;
@@ -67,7 +75,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     line-height: 1.2rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.05rem;
   }
   
   .masthead h2,
@@ -255,7 +263,7 @@ body {
     .btn-secondary {
     color: rgba(253, 231, 76, 0.75);
     background: linear-gradient(to top, rgba(91, 192, 235, 0.7) 0%, rgba(2, 103, 193, 0.8) 75%, rgb(2, 103, 193, 0.8) 100%);
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     border-color: #000;
   }
   
@@ -268,7 +276,7 @@ body {
   .btn-sm {
     padding: 0.2rem 0.3rem;
     font-size: 0.95rem;
-    border-radius: 0.2rem;
+    border-radius: 0.25rem;
     width: 5.5rem;
     border: 0;
     letter-spacing: 0.05rem;
