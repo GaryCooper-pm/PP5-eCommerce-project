@@ -63,18 +63,16 @@ I used the agile methodology tool:
 
 ![Kanban Board](static/assets/images/README-images/kanban_board.JPG)
 
-- As a Site User I can view a list of posts so that I can easily select one to view.
-- As a Site User I can view a list of posts so that I can select one to read.
-- As a Site User I can click on a post so that I can read the full content.
-- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
-- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
-- As a Site User I can register an account so that I can comment and like.
-- As a Site User I can leave comments on a post so that I can be involved in the conversation.
-- As a Site User I can like or unlike a post so that I can interact with the content.
-- As a Site Admin I can create, read, update and delete posts (CRUD) so that I can manage my blog content both from the front and back-end.
-- As a Site Admin I can create draft posts so that I can finish writing the content later.
-- As a Site Admin I can create categories so that I can categorise posts.
-- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+- As a Site User I can Register on the website with my details, username, email and password.
+- As a Site User I can recieve a confirmation email after registering my account. 
+- As a Site User I can view all available services on the site.
+- As a Site User I can view the basic service details.
+- As a logged in Site User I have a personal profile.
+- As a logged in Site User I can easily edit my peronal profile details.
+- As a logged in Site User I can easily delete my peronal profile.
+- As a logged in Site User I can choose a specific service option.
+- As a logged in Site User I can easily pay for the service.
+- As a logged in Site User I can easily view my service purchase history.
 
 ---
 
