@@ -8,8 +8,8 @@
         alt="image of a bicycle mechanic">
         <br>
         {% if request.user.is_authenticated %}
-        <h1 class="mx-auto mt-2 mb-2">Welcome back, {{ user.username }}</h1>
-        <h1 class="mx-auto mt-2 mb-2">Choose your required option below,
+        <h1 class="mx-auto mt-2 mb-2">Welcome to <strong>Blue Turtle</strong>, {{ user.username }}</h1>
+        <h1 class="mx-auto mt-2 mb-2">Choose your required service option below,
         pay for your chosen service
         and we will arrange collection!</h1>
         <hr>
@@ -17,10 +17,12 @@
 
     {% else %}
         <h1 class="mx-auto mt-3 mb-3">Here at <strong>Blue Turtle</strong> we take away the hassle of
-            servicing your pride and joy.
+            servicing your pride and joy.<br>
             Please login below to access your <strong>Blue Turtle</strong> account</h1>
         <a class="btn btn-secondary" href="{% url 'services' %}">Current Services</a>
         <a class="btn btn-secondary" href="{% url 'account_login' %}">Login</a>
+        <br>
+        <br>
     {% endif %}
 
 {% endblock %}

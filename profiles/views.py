@@ -3,11 +3,11 @@
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth import get_user_model
-from django.views.generic.base import TemplateView
+from django.views.generic.base import TemplateView, View
 from django.views.generic.edit import UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from .forms import UserForm
 from .models import UserProfile
 from services.models import ServiceHistory
@@ -16,8 +16,7 @@ from services.models import ServiceHistory
 user = get_user_model()
 
 
-class ProfileView(LoginRequiredMixin, TemplateView):
-    """ Renders the profile in a form """
+class ProfileView(View):
     model = UserProfile
     form = UserForm
     template_name = 'profiles/profile.html'
@@ -27,12 +26,6 @@ class ProfileView(LoginRequiredMixin, TemplateView):
         form.instance.booked_by = self.request.user
         return super().form_valid(form)
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['history'] = ServiceHistory.objects.filter(booked_by=self.request.user)  # noqa
-        context['form'] = UserForm(instance=self.request.user.userprofile)
-        return context
-
 
 class UpdateProfile(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """ Allows user to update personal profile
@@ -41,6 +34,7 @@ class UpdateProfile(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     fields = ('first_name',
               'last_name',
               'email',
+              'vehicle_reg',
               'street_address1',
               'street_address2',
               'town_or_city',
@@ -60,6 +54,18 @@ class UpdateProfile(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     def test_func(self):
         self.object = self.get_object()
         return self.object.user == self.request.user
+
+
+class ServiceHistory(View):
+    model = ServiceHistory
+    fields = ('order_date',
+              'service_type')
+    template_name = 'profiles/profile.html'
+
+    def get(self, request, *args, **kwargs):
+        user = UserProfile.objects.get(username=request.user.username)
+        history = ServiceHistory.objects.filter(user=user)
+        return render(request, self.template_name, {'user': user, 'history': history})
 
 
 class DeleteProfile(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
