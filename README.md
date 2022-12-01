@@ -283,6 +283,7 @@ If you need to make a local clone:
 
 * Images have been compressed using [tinypng.com](https://tinypng.com/)
 * Picture of bicycle mechanic courtesy of [depositphotos.com](https://depositphotos.com/)
+* Picture of bicycle mechanic fixing bike for Error Pages purchased from [iStock.com](https://www.istockphoto.com/)
 * Blue Turtle logo, was created by myself using [Adobe Illustrator](https://www.adobe.com/uk/products/illustrator.html)
 
 
