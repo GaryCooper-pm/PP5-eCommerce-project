@@ -5,6 +5,8 @@ from django.contrib.auth.models import User
 
 
 class Services(models.Model):
+    class Meta:
+        verbose_name_plural = "services"
     """ Services available model """
     service_name = models.CharField(max_length=200)
     price = models.DecimalField(max_digits=5, decimal_places=2)
@@ -16,6 +18,8 @@ class Services(models.Model):
 
 
 class ServiceHistory(models.Model):
+    class Meta:
+        verbose_name_plural = "service history"
     """ User order history within the user profile """
     booked_by = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     order_date = models.DateField(auto_now=False, blank=False, default=None)
