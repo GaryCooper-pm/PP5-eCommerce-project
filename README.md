@@ -19,6 +19,9 @@ For my fifth project I decided to create a bicycle service eCommerce store.
 
 * My initial idea for this project was to create a simple eCommerce website that would enable people to create an account and purchase (via [Stripe.com](https://stripe.com/gb)) specific services for their bicycles.
 
+## STRATEGY
+
+* Blue Turtle is primarily focused on selling B2C products to end users.
 
 ## TARGET AUDIENCE
 
@@ -94,13 +97,17 @@ I used the agile methodology tool:
 
 ![Sign In Page](static/assets/images/README-images/login_page.JPG)
 
-* Registered User Profile Page
+* Services Page
 
-![Registered User Profile Page](static/assets/images/README-images/profile_page.JPG)
+![Services Page](static/assets/images/README-images/services_page.JPG)
+
+* Individual Service Item Page
+
+![Individual Service Item Page](static/assets/images/README-images/individual_service_item_page.JPG)
 
 * Mobile Home Page
 
-![Mobile Home Page](static/assets/images/README-imagess/mobile_home_page.JPG)
+![Mobile Home Page](static/assets/images/README-images/mobile_home_page.JPG)
 
 * Mobile Register Page
 
@@ -109,6 +116,14 @@ I used the agile methodology tool:
 * Mobile Sign In Page
 
 ![Mobile Sign In Page](static/assets/images/README-images/mobile_login_page.JPG)
+
+* Mobile Services Page
+
+![Mobile Services Page](static/assets/images/README-images/mobile_services_page.JPG)
+
+* Mobile Individual Service Item Page
+
+![Mobile Individual Service Item Page](static/assets/images/README-images/mobile_individual_service_item_page.JPG)
 
 ### MODELS DIAGRAM
 
@@ -151,14 +166,12 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ## FRAMEWORKS LIBRARIES AND PROGRAMS USED
 
-- [Am I Responsive](https://amiresponsive.co.uk/)
-  - Am I Responsive was used to create desktop/mobile mockups to visualise the project.
 - [Balsamiq](https://balsamiq.com/)
   - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
 - [Bootstrap](https://getbootstrap.com/)
   - Bootstrap template.
-- [Cloudinary](https://cloudinary.com/)
-  - Cloudinary was used to store the project's images.
+- [Amazon AWS](https://aws.amazon.com/)
+  - Amazon AWS was used to store the project's images and static files.
 - [Django](https://www.djangoproject.com/)
   - Django was used to build the app.
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
@@ -179,9 +192,70 @@ The main colours are Light and dark blue with yellow accents and text.
   - Heroku was used for hosting and deploying the game.
 - [Lucidchart](https://www.lucidchart.com/)
   - Lucidchart was used for drawing the database models.
+- [Mailchimp](https://mailchimp.com/?currency=GBP)
+  - Mailchimp was used to create the newsletter subscription form for the project.
 - [PostgreSQL](https://www.postgresql.org/)
   - PostgreSQL for database management.
+- [Techsini](https://techsini.com/multi-mockup/index.php)
+  - Techsini was used to create desktop/mobile mockups to visualise the project.
 
+# TESTING
+
+## Manual Testing
+
+## Testing User Stories
+
+## Testing Admin User Stories
+
+## Validation
+
+### HTML
+
+-  when passing through the official [W3C validator]()
+
+![HTML check](static/assets/images/README-images/html_check.JPG)
+
+### CSS
+
+-  when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=)
+
+![CSS check](static/assets/images/README-images/css_check.JPG)
+
+### PYTHON / PEP8 Online Validation
+
+-  when passing through the [PEP8online check.](http://pep8online.com/)
+
+![pep8 check](static/assets/images/README-images/pep8_check.JPG)
+
+
+## GOOGLE Lightouse Testing
+
+- Google's Lighthouse was used for measuring the quality of the pages.
+  - Home Page (desktop) result:
+
+  ![Lighthouse result](static/assets/images/README-images/lighthouse_desktop.JPG)
+
+  - Home Page (mobile) result:
+
+  ![Lighthouse result](static/assets/images/README-images/lighthouse_mobile.JPG)
+
+
+## Responsive Testing
+
+- __[Techsini](https://techsini.com/multi-mockup/index.php)__
+  - This shows how responsive the website is and looks across four different viewports (Desktop, Laptop, Tablet and Mobile):
+![Responsive TFS](static/assets/images/README-images/responsiveness.JPG)
+
+
+## Unsolved bugs and problems
+
+
+## Resolved bugs and problems
+
+
+## FUTURE DEVELOPMENT
+
+- I would like to implement the ability for registered users (non-admin) to be able to purchase multiple services.
 
 # DEPLOYMENT
 
