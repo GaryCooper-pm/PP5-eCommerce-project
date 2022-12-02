@@ -160,6 +160,21 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Blue Turtle Facebook Post](static/assets/images/README-images/facebook_post.JPG)
 
+### STRIPE PAYMENTS
+
+- After the `logged in` user has the clicked the `Buy Now!` button on the service detail page,
+<br>
+  they are taken to a `Please confirm if you wish to continue with your purchase` page.
+
+- The user is then taken directly to the [Stripe.com](https://stripe.com/gb) payment window.
+   - Due to the nature of this project, only test payments are available.
+   - Payment information is:
+      - `4242 4242 4242 4242` (card number)
+      - `04/24` (MM/YY)
+      - `424 or 242` (CVC)
+      - `Any name`
+      - `Any postcode`
+
 # TECHNOLOGIES
 
 ## DEVELOPMENT
