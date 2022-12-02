@@ -149,6 +149,17 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Main colours](static/assets/images/README-images/bt-color-palette.JPG)
 
+### SOCIAL MEDIA MARKETING
+
+- For the purposes of the assessment a mock Facebook page was created to represent the company on a social media platform. 
+   - The Facebook page includes links to the Blue Turtle website to drive traffic from the social network to the site.
+
+![Blue Turtle Facebook Page](static/assets/images/README-images/facebook_page.JPG)
+
+![Blue Turtle Facebook Intro](static/assets/images/README-images/facebook_intro.JPG)
+
+![Blue Turtle Facebook Post](static/assets/images/README-images/facebook_post.JPG)
+
 # TECHNOLOGIES
 
 ## DEVELOPMENT
@@ -196,6 +207,8 @@ The main colours are Light and dark blue with yellow accents and text.
   - Mailchimp was used to create the newsletter subscription form for the project.
 - [PostgreSQL](https://www.postgresql.org/)
   - PostgreSQL for database management.
+- [Stripe](https://stripe.com/en-gb-us)
+  - Stripe Payment Processing was used for the payment management.
 - [Techsini](https://techsini.com/multi-mockup/index.php)
   - Techsini was used to create desktop/mobile mockups to visualise the project.
 
