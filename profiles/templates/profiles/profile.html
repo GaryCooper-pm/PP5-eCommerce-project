@@ -8,11 +8,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-12 col-md-6">
-			<h1 class="mb-1 border-dark">- Order history -</h1>
-			<p class="mx-auto mt-0 mb-1 border-dark"> Order date: {{ user.servicehistory.order_date }}</p>
-			<p class="mx-auto mt-0 mb-1 border-dark px-5"> Service type: {{ user.servicehistory.service_type }}</p>
-			<p class="mx-auto mt-0 mb-1 border-dark px-5"> Customer: {{ user.userprofile.first_name }}</p>
-			<br>
+			<h1 class="mb-1 border-dark">- Your Service history - <br>
+								Customer: {{ user.userprofile.first_name }}</h1><br>
+			{% for history in history %}
+			
+			<p class="mx-auto mt-0 mb-1 border border-dark"> 
+				Order date: {{ history.order_date }} <br>
+				Service Required: "{{ history.service_type }}"</p>
+			
+			{% endfor %}
 			<br>
 			<br>
 		</div>
@@ -30,7 +34,7 @@
 					{{ user.userprofile.county }}<br>
 					{{ user.userprofile.postcode }}<br>
 				</p>
-
+			
 				<div class="text-right">
 					<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#profileModal">Edit
 						Profile</button>
@@ -67,8 +71,9 @@
 	</div>
 </div>
 
+
 {% else %}
-<h1>Please login to view your profile</h1>
+<h1>To view your profile please login</h1>
 <a class="btn btn-secondary login" href="{% url 'account_login' %}">Login</a>
 {% endif %}
 

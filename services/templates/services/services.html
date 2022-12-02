@@ -5,9 +5,9 @@
     {% if request.user.is_authenticated %}
         <img class="mb-2" src="{% static 'assets/images/bt-logo.png' %}" alt="Blue Turtle logo">
         <br>
-        <h2 class="mx-auto mt-2 mb-2">Please select a service option below,
+        <h1 class="mx-auto mt-2 mb-2">Please select a service option below,
                                       pay for your chosen service
-                                      and we will arrange collection!</h2>
+                                      and we will arrange collection!</h1>
 
     {% for object in object_list %}
         <a class="btn btn-secondary" href="{% url 'services_detail' object.id %}">{{ object }}</a></li>

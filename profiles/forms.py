@@ -1,3 +1,4 @@
+""" Forms file for profiles app """
 from django import forms
 from .models import UserProfile
 from crispy_forms.helper import FormHelper
@@ -17,9 +18,8 @@ class UserForm(forms.ModelForm):
                   'postcode',
                   'phone_number')
 
-
-def __init__(self, *args, **kwargs):
-    super().__init__(*args, **kwargs)
-    self.helper = FormHelper()
-    self.helper.form_method = 'post'
-    self.helper.add_input(Submit('submit', 'update-profile'))
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.add_input(Submit('submit', 'update-profile'))

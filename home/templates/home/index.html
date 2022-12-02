@@ -10,8 +10,7 @@
         {% if request.user.is_authenticated %}
         <h1 class="mx-auto mt-2 mb-2">Welcome to <strong>Blue Turtle</strong>, {{ user.username }}</h1>
         <h1 class="mx-auto mt-2 mb-2">Choose your required service option below,
-        pay for your chosen service
-        and we will arrange collection!</h1>
+        pay for the service and we will arrange collection!</h1>
         <hr>
         <a class="btn btn-secondary" href="{% url 'services' %}">Available Services</a>
 
@@ -20,7 +19,7 @@
             servicing your pride and joy.<br>
             Please login below to access your <strong>Blue Turtle</strong> account</h1>
         <a class="btn btn-secondary" href="{% url 'services' %}">Current Services</a>
-        <a class="btn btn-secondary" href="{% url 'account_login' %}">Login</a>
+        <a class="btn btn-secondary login" href="{% url 'account_login' %}">Login</a>
         <br>
         <br>
     {% endif %}

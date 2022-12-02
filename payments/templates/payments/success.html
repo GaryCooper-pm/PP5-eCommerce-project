@@ -5,11 +5,11 @@
 
 <section class="section">
     <div class="container">
-        <h3>Your payment has been successful.</h3>
+        <h3>Your payment has been successful {{ user.username }}.</h3>
         <hr>
         <h5>We will be in touch shortly to arrange collection.</h5>
         <h5>You do not need to do anything else.</h5>
-        <a class="btn btn-secondary" href="{% url 'home' %}">GO HOME</a>
+        <a class="btn btn-secondary" href="{% url 'profiles' %}">GO HOME</a>
     </div>
 </section>
 

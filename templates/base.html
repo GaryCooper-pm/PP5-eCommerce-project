@@ -82,8 +82,9 @@
                     {% if request.user.is_authenticated %}
 
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link"
-                            href="{% url 'update-profile' user.userprofile.id %}">{{ user.username }}'s Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'profiles' %}">{{ user.username }}'s
+                            Profile</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Logout</a></li>
 
                     {% else %}
@@ -114,17 +115,19 @@
     <!-- Social links-->
     <section class="contact-section">
         <div class="social d-flex justify-content-center">
-            <a class="mt-2 mx-2" href="https://twitter.com/?lang=en" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a class="mt-2 mx-2" href="https://en-gb.facebook.com/" rel="noopener" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a class="mt-2 mx-2" href="https://github.com/GaryCooper-pm/PP5-eCommerce-project" rel="noopener" target="_blank"><i
-                    class="fab fa-github"></i></a>
+            <a class="mt-2 mx-2" href="https://twitter.com/?lang=en" rel="noopener noreferrer nofollow"
+                target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="mt-2 mx-2" href="https://en-gb.facebook.com/" rel="noopener noreferrer nofollow"
+                target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="mt-2 mx-2" href="https://github.com/GaryCooper-pm/PP5-eCommerce-project" rel="noopener noreferrer nofollow"
+                target="_blank"><i class="fab fa-github"></i></a>
         </div>
+
         <footer class="container-wrapper">
             <div class="content-container">
                 <section class="footer">
                     <div class="row">
                         <div class="col-12 page-header mb-2">
-                            <!-- <h2>Stay in touch with Blue Turtle:</h2> -->
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=ef6e136d99bacaf9f774b0dbd&amp;id=a743d1e6d8&amp;f_id=00b8c3e1f0" 
@@ -132,8 +135,8 @@
                                     class="validate" target="_blank" novalidate>
                                     <div id="mc_embed_signup_scroll">
                                         <h2>Subscribe to our newsletter</h2>
-                                        <div class="footer small text-center px-4 px-lg-5">Get exclusive offers and discount codes by subscribing to our monthly
-                                            newsletter</div>
+                                        <div class="footer small text-center px-4 px-lg-5">Subscribe to our monthly newsletter 
+                                                to get exclusive offers</div>
                                         <div class="indicates-required"><span class="asterisk">*</span> indicates
                                             required</div>
                                         <div class="mc-field-group">
@@ -167,7 +170,8 @@
                     <div class="row">
                         <div class="footer small text-center px-4 px-lg-5">Copyright &copy; Gary Cooper (Code Institute Student) 2022
                             For Educational Purposes Only<br>
-                            <a href="https://www.privacypolicygenerator.info/live.php?token=YLZCOfMBrh4mwqnkGoCMTB3xnFTt4PoN" rel="noopener" target="_blank">Blue Turtle Privacy Policy</a>
+                            <a href="https://www.privacypolicygenerator.info/live.php?token=YLZCOfMBrh4mwqnkGoCMTB3xnFTt4PoN" rel="noopener noreferrer nofollow" 
+                                target="_blank">Blue Turtle Privacy Policy</a>
                         </div>
                     </div>
                 </section>
