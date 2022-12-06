@@ -21,11 +21,11 @@ For my fifth project I decided to create a bicycle service eCommerce store.
 
 ## STRATEGY
 
-* Blue Turtle is primarily focused on selling B2C products to end users.
+* Blue Turtle is primarily focused on selling B2C services to end users.
 
 ## TARGET AUDIENCE
 
-* Anyone who wants to have their bicycle serviced by a fully qualified mechanic.
+* Anyone who owns a bicycle and wants to have it serviced by a fully qualified mechanic.
 
 #
 ## CONTENTS
@@ -56,7 +56,7 @@ For my fifth project I decided to create a bicycle service eCommerce store.
 
 ## PROJECT CHECKLIST
 
-### **The complete Project checklist can be found:** [HERE](https://github.com/users/GaryCooper-pm/projects/3/views/1)
+### **The complete Project checklist can be found:** [HERE](https://github.com/users/GaryCooper-pm/projects/4)
 
 ## USER STORY
 
@@ -66,10 +66,10 @@ I used the agile methodology tool:
 
 ![Kanban Board](static/assets/images/README-images/kanban_board.JPG)
 
-- As a Site User I can Register on the website with my details, username, email and password.
-- As a Site User I can recieve a confirmation email after registering my account. 
 - As a Site User I can view all available services on the site.
 - As a Site User I can view the basic service details.
+- As a Site User I can register on the website with my details, username, email and password.
+- As a Site User I can recieve a confirmation email after registering my account. 
 - As a logged in Site User I have a personal profile.
 - As a logged in Site User I can easily edit my peronal profile details.
 - As a logged in Site User I can easily delete my peronal profile.
@@ -284,6 +284,8 @@ The main colours are Light and dark blue with yellow accents and text.
 ## FUTURE DEVELOPMENT
 
 - I would like to implement the ability for registered users (non-admin) to be able to purchase multiple services.
+- I would like to include the ability for registered users who have a verified purchase to leave a rating/review of that particular service.
+- I would like to implement the ability for registered users to request a bespoke service not currently listed.
 
 # DEPLOYMENT
 

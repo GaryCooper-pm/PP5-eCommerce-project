@@ -28,7 +28,7 @@ body {
   }
   
   strong {
-    color: #255C99;
+    color: #8CB5E3;
   }
 
   hr {
@@ -320,6 +320,13 @@ body {
 
 #mc_embed_signup .mc-field-group input {
   text-indent: 6% !important;
+}
+
+#mc_embed_signup .indicates-required .asterisk{
+  color:#fde74c !important;
+  text-align:right !important;
+  font-size:16px !important;
+  margin-right:4% !important;
 }
 
   /*------------------------------ Form styling */
