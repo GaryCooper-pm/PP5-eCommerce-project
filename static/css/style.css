@@ -28,7 +28,7 @@ body {
   }
   
   strong {
-    color: #8CB5E3;
+    color: #8CB5E3 !important;
   }
 
   hr {
