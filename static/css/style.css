@@ -366,9 +366,7 @@ label.requiredField {
   
   /*------------------------------ Social/contact links */
   .contact-section .social {
-    margin-top: 0.05rem;
-    background-color: #262626;
-    opacity: 0.8;
+    margin-top: 4rem;
   }
   
   .contact-section .social a {

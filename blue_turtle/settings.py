@@ -18,11 +18,11 @@ if os.path.isfile("env.py"):
     import env  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-if DEBUG == 'False':
+if DEBUG == 'True':
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 else:
     BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,10 +32,13 @@ else:
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-cqg#g#)$zgu=_5k=bx^r=%w&zz2mv2w)sy_$rr*it*(5u$gnf8')
+SECRET_KEY = os.environ.get("SECRET_KEY","")
 
 ALLOWED_HOSTS = ['blueturtle.herokuapp.com', 'localhost',
-                 'localhost:8000', '127.0.0.1', '127.0.0.1:8000']
+                 'localhost:8000', '127.0.0.1', '127.0.0.1:8000',
+                 'https://8000-garycooperp-pp5ecommerc-vgpl47ohpsd.ws-eu78.gitpod.io']
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-garycooperp-pp5ecommerc-vgpl47ohpsd.ws-eu78.gitpod.io']
 
 # Application definition
 
@@ -219,7 +222,7 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 # Stripe Payments settings
-STRIPE_PUBLISHABLE_KEY = os.environ.get('STRIPE_PUBLISHABLE_KEY')
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 DOMAIN_URL = os.environ.get('DOMAIN_URL')
