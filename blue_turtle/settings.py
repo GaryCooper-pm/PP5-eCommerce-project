@@ -32,7 +32,7 @@ else:
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY","")
+SECRET_KEY = os.environ.get("SECRET_KEY", "")
 
 ALLOWED_HOSTS = ['blueturtle.herokuapp.com', 'localhost',
                  'localhost:8000', '127.0.0.1', '127.0.0.1:8000',
