@@ -87,8 +87,8 @@ body {
   
   @media (max-width: 450px) {
     .main-image {
-        display: none;
-      }
+      width: 175px;
+    }
   }
 
   .masthead h1,
@@ -152,7 +152,7 @@ body {
   /*------------------------------ Nav styling imported from bootstrap (modified) */
 
   .navbar-light .navbar-nav .nav-link {
-    color: #5bc0eb;
+    color: #fde74c;
   }
   
   .navbar-light .navbar-nav .nav-link:hover,
@@ -170,14 +170,14 @@ body {
 
   #mainNav {
     min-height: 3.5rem;
-    background-color: #c1eeff;
+    background-color: #255C99;
     opacity: 0.9;
   }
   
   #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: #5bc0eb;
+    color: #fde74c;
     border: 1px solid #000;
   }
   
