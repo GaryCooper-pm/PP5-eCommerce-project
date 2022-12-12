@@ -49,7 +49,7 @@ class CancelledView(TemplateView):
 def stripe_config(request):
 
     if request.method == 'GET':
-        stripe_config_data = {'publicKey': settings.STRIPE_PUBLIC_KEY}
+        stripe_config_data = {'publicKey': settings.STRIPE_PUBLISHABLE_KEY}
         return JsonResponse(stripe_config_data, safe=False)
     return HttpResponse(status=400)
 
