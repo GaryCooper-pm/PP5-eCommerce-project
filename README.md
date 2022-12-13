@@ -156,7 +156,7 @@ The main colours are Light and dark blue with yellow accents and text.
   - Two buttons, one to view services and one to login.
 
 ![Home Page](static/assets/images/README-images/home_page2.JPG)
-![Home Page](static/assets/images/README-images/signedin_home_page.JPG)
+![Signed In Home Page](static/assets/images/README-images/signedin_home_page.JPG)
 
 - The Footer Section
   - In the footer section there are social links and a newsletter subscription form as well as a link to the privacy policy.
@@ -167,23 +167,27 @@ The main colours are Light and dark blue with yellow accents and text.
   - In the navbar at the top of the site there are links to the Home Page, Services, Sign Up and Login pages.
   - If the user is registered and logged in, the navbar at the top of the site then shows links to the Home Page, Services, User's Profile page and a Logout link.
 
-![Footer Section](static/assets/images/README-images/navbar.JPG)
-![Footer Section](static/assets/images/README-images/signedin_navbar.JPG)
+![Navbar](static/assets/images/README-images/navbar.JPG)
+![Signed In Navbar](static/assets/images/README-images/signedin_navbar.JPG)
 
 - The Services Page;
   - A list of available services, selectable by individual buttons.
   - A login button.
   - If the user is registered and logged in, there will be a 'Go Back' button in place of the 'Login' button
 
-![Home Page](static/assets/images/README-images/services_page2.JPG)
-![Home Page](static/assets/images/README-images/signedin_services_page2.JPG)
+![Services Page](static/assets/images/README-images/services_page2.JPG)
+![Signed In Services Page](static/assets/images/README-images/signedin_services_page2.JPG)
 
   - Each service button will take the user to the relevant service page.
   - Each page details the service and has a 'Go Back' button and a 'Login' button.
   - If the user is registered and logged in, the 'Login' button is replaced with a 'Buy Now!' button.
 
-![Home Page](static/assets/images/README-images/individual_services_page2.JPG)
-![Home Page](static/assets/images/README-images/signedin_individual_services_page2.JPG)
+![Individual Service Item Page](static/assets/images/README-images/individual_service_item_page2.JPG)
+![Signed In Individual Service Item Page](static/assets/images/README-images/signedin_individual_service_item_page2.JPG)
+
+  - If the user chooses to purchase the service by clicking the 'Buy Now!' button they are presented with a 'Confirm Purchase' button or a 'Cancel' button.
+
+![Confirm Purchase Page](static/assets/images/README-images/confirm_purchase.JPG)
 
 ### SOCIAL MEDIA MARKETING
 
