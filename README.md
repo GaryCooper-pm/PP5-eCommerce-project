@@ -141,7 +141,7 @@ I used the agile methodology tool:
 
 ![Blue Turtle Flowchart](static/assets/images/README-images/bt-flowchart.JPG)
 
-### Colors
+### COLORS
 
 - I used [Coolors](https://coolors.co/) to randomly generate a colour palette for this project.<br>
 I chose colours that were representative of the Blue Turtle logo for this project.
@@ -149,9 +149,45 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Main colours](static/assets/images/README-images/bt-color-palette.JPG)
 
+### EXISTING FEATURES
+
+- The Home Page;
+  - A welcome message with a different message if user is registered and logged in.
+  - Two buttons, one to view services and one to login.
+
+![Home Page](static/assets/images/README-images/home_page2.JPG)
+![Home Page](static/assets/images/README-images/signedin_home_page.JPG)
+
+- The Footer Section
+  - In the footer section there are social links and a newsletter subscription form as well as a link to the privacy policy.
+
+![Footer Section](static/assets/images/README-images/footer_section.JPG)
+
+- The Navbar
+  - In the navbar at the top of the site there are links to the Home Page, Services, Sign Up and Login pages.
+  - If the user is registered and logged in, the navbar at the top of the site then shows links to the Home Page, Services, User's Profile page and a Logout link.
+
+![Footer Section](static/assets/images/README-images/navbar.JPG)
+![Footer Section](static/assets/images/README-images/signedin_navbar.JPG)
+
+- The Services Page;
+  - A list of available services, selectable by individual buttons.
+  - A login button.
+  - If the user is registered and logged in, there will be a 'Go Back' button in place of the 'Login' button
+
+![Home Page](static/assets/images/README-images/services_page2.JPG)
+![Home Page](static/assets/images/README-images/signedin_services_page2.JPG)
+
+  - Each service button will take the user to the relevant service page.
+  - Each page details the service and has a 'Go Back' button and a 'Login' button.
+  - If the user is registered and logged in, the 'Login' button is replaced with a 'Buy Now!' button.
+
+![Home Page](static/assets/images/README-images/individual_services_page2.JPG)
+![Home Page](static/assets/images/README-images/signedin_individual_services_page2.JPG)
+
 ### SOCIAL MEDIA MARKETING
 
-- For the purposes of the assessment a mock Facebook page was created to represent the company on a social media platform. 
+- For the purposes of the assessment mock Facebook and Twitter pages were created to represent the company on social media platforms. 
    - The Facebook page includes links to the Blue Turtle website to drive traffic from the social network to the site.
 
 ![Blue Turtle Facebook Page](static/assets/images/README-images/facebook_page.JPG)
@@ -159,6 +195,8 @@ The main colours are Light and dark blue with yellow accents and text.
 ![Blue Turtle Facebook Intro](static/assets/images/README-images/facebook_intro.JPG)
 
 ![Blue Turtle Facebook Post](static/assets/images/README-images/facebook_post.JPG)
+
+![Blue Turtle Twitter Page](static/assets/images/README-images/twitter_page.JPG)
 
 ### STRIPE PAYMENTS
 
