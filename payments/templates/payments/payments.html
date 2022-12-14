@@ -7,10 +7,42 @@
 <section class="section">
     <div class="container">
         <h4>Please confirm if you wish to proceed with your purchase</h4>
-        <button class="btn btn-success" id="confirmBtn">Confirm purchase</button>
+        <button class="btn btn-success" id="submitBtn">Confirm purchase</button>
     </div>
     <br>
     <a class="btn btn-danger" href="{% url 'services' %}">Cancel</a>
 </section>
+<script>// static/main.js
 
+ // static/main.js
+
+console.log("Sanity check!");
+
+// Get Stripe publishable key
+fetch("/payments/config/")
+.then((result) => { return result.json(); })
+.then((data) => {
+  // Initialize Stripe.js
+  const stripe = Stripe(data.publicKey);
+
+  // new
+  // Event handler
+  document.querySelector("#submitBtn").addEventListener("click", () => {
+    // Get Checkout Session ID
+    var a = "{{ request.GET.pk }}"
+    fetch("/payments/create-checkout-session/?pk="+a)
+    // fetch("/payments/create-checkout-session/")
+    .then((result) => { return result.json(); })
+    .then((data) => {
+      console.log("=============>",data);
+      // Redirect to Stripe Checkout
+      return stripe.redirectToCheckout({sessionId: data.sessionId})
+    })
+    .then((res) => {
+      console.log("res",res);
+    });
+  });
+});
+console.log("Sanity check!");
+</script>
 {% endblock %}

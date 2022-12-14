@@ -17,7 +17,7 @@ class PaymentsView(TemplateView):
     template_name = 'payments/payments.html'
 
 
-class SuccessView(UserPassesTestMixin, TemplateView):
+class SuccessView(TemplateView):
     """ Retrieves the payments success from stripe
         then adds the purchased service to the users Service History """
     template_name = 'payments/success.html'
@@ -61,12 +61,18 @@ def stripe_config(request):
 def create_checkout_session(request):
 
     if request.method == 'GET':
+        # domain_url = settings.DOMAIN_URL
         domain_url = settings.DOMAIN_URL
+        print("domain url---->> ", domain_url)
         stripe.api_key = settings.STRIPE_SECRET_KEY
         # Extract the PK from the GET Pararameter (?pk=)
+
         service = Services.objects.get(pk=request.GET['pk'])
+        print("dfgdfhdfhgf", service.price)
         try:
+            print("domain url---->> ", domain_url, 'payments/success?session_id=2133')
             checkout_session = stripe.checkout.Session.create(
+
                 success_url=domain_url + 'payments/success/?session_id='+str(random.randint(100, 100000000)),  # noqa
                 cancel_url=domain_url + 'payments/cancelled/',
                 payment_method_types=['card'],
@@ -82,13 +88,18 @@ def create_checkout_session(request):
                             'name': service.service_name,
                             'description': service.description,
                         },
+
                     }
                     }
                 ],
-                # customer_email=request.user.email
+                # print("line_items",line_items)
+
             )
+
+            print("checkout_session", checkout_session)
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as e:
+            print("data----------->> ", e)
             return JsonResponse({'error': str(e)})
 
 
