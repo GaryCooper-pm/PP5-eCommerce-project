@@ -1,6 +1,7 @@
 """ Payments app views file """
 
 import stripe
+import random
 import datetime
 from django.conf import settings
 from django.http.response import JsonResponse, HttpResponse
@@ -8,6 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.generic.base import TemplateView
 from django.contrib.auth.mixins import UserPassesTestMixin
 from services.models import Services, ServiceHistory
+from blue_turtle import settings
 
 
 class PaymentsView(TemplateView):
@@ -49,7 +51,7 @@ class CancelledView(TemplateView):
 def stripe_config(request):
 
     if request.method == 'GET':
-        stripe_config_data = {'publicKey': settings.STRIPE_PUBLIC_KEY}
+        stripe_config_data = {'publicKey': settings.STRIPE_PUBLISHABLE_KEY}
         return JsonResponse(stripe_config_data, safe=False)
     return HttpResponse(status=400)
 
@@ -65,17 +67,25 @@ def create_checkout_session(request):
         service = Services.objects.get(pk=request.GET['pk'])
         try:
             checkout_session = stripe.checkout.Session.create(
-                success_url=domain_url + 'payments/success?session_id={CHECKOUT_SESSION_ID}',  # noqa
+                success_url=domain_url + 'payments/success/?session_id='+str(random.randint(100, 100000000)),  # noqa
                 cancel_url=domain_url + 'payments/cancelled/',
                 payment_method_types=['card'],
                 mode='payment',
                 line_items=[
                     {
-                        'price': service.price_id,
+                        # 'price': service.price,
                         'quantity': 1,
+                         'price_data': {
+                        'currency': 'GBP',
+                        'unit_amount': int(service.price*100),
+                        'product_data': {
+                            'name': service.service_name,
+                            'description': service.description,
+                        },
+                    }
                     }
                 ],
-                customer_email=request.user.email
+                # customer_email=request.user.email
             )
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as e:

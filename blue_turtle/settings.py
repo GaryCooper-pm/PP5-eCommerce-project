@@ -222,10 +222,13 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 # Stripe Payments settings
-STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
-STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
-STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
-DOMAIN_URL = os.environ.get('DOMAIN_URL')
+# STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+# STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
+# STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
+# DOMAIN_URL = os.environ.get('DOMAIN_URL')
+DOMAIN_URL = 'http://localhost:8000/'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51LytJoHvypBSI4oFecpd2b6Yw6cfdjf2ZCJJ6ldrGcr2F9o8lIfV4kVqsD9g6b523WawjKkoMNrj30Na2cOjm1S100Zl6cqwcB'
+STRIPE_SECRET_KEY = 'sk_test_51LytJoHvypBSI4oFUZyyILUEDW9NKVCJi4cB0IpiEbt4QgkFs6XaA8wne0N0FyNGTKPkbhXAh98LWIkUdlUky6Rp00PhHQtgwH'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
