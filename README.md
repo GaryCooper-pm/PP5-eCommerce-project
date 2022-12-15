@@ -158,6 +158,19 @@ The main colours are Light and dark blue with yellow accents and text.
 ![Home Page](static/assets/images/README-images/home_page2.JPG)
 ![Signed In Home Page](static/assets/images/README-images/signedin_home_page.JPG)
 
+- The Registered User Profile Page;
+  - Once a user has registered and confirmed their account they can login and view their individual profile page.
+  - The user is also able to edit and update their personal details.
+  - The user can also delete their profile.
+
+![Profile Page](static/assets/images/README-images/profile_page.JPG)
+![Edit Profile Page](static/assets/images/README-images/edit_profile_page.JPG)
+![Delete Profile Page](static/assets/images/README-images/delete_profile_page.JPG)
+
+  - Once the user confirms to delete their profile they are taken to a page that has three buttons 'Login', 'Sign up', and 'Current Services'.
+
+![After Profile Deletion Page](static/assets/images/README-images/after_profile_deletion_page.JPG)
+
 - The Footer Section
   - In the footer section there are social links and a newsletter subscription form as well as a link to the privacy policy.
 
