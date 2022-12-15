@@ -189,6 +189,18 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Confirm Purchase Page](static/assets/images/README-images/confirm_purchase.JPG)
 
+- Stripe Payment/Checkout Page;
+  - Once the user clicks the 'confirm Purchase' button they are taken directly to the [Stripe.com](https://stripe.com/gb) payment window where they can enter their payment details.
+  - Due to the nature of this project, only test payments are available.
+  - Payment information is:
+    - `4242 4242 4242 4242` (card number)
+    - `04/24` (MM/YY)
+    - `424 or 242` (CVC)
+    - `Any name`
+    - `Any postcode`
+
+![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe+payment.JPG)
+
 ### SOCIAL MEDIA MARKETING
 
 - For the purposes of the assessment mock Facebook and Twitter pages were created to represent the company on social media platforms. 
@@ -202,20 +214,6 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Blue Turtle Twitter Page](static/assets/images/README-images/twitter_page.JPG)
 
-### STRIPE PAYMENTS
-
-- After the `logged in` user has the clicked the `Buy Now!` button on the service detail page,
-<br>
-  they are taken to a `Please confirm if you wish to continue with your purchase` page.
-
-- The user is then taken directly to the [Stripe.com](https://stripe.com/gb) payment window.
-   - Due to the nature of this project, only test payments are available.
-   - Payment information is:
-      - `4242 4242 4242 4242` (card number)
-      - `04/24` (MM/YY)
-      - `424 or 242` (CVC)
-      - `Any name`
-      - `Any postcode`
 
 # TECHNOLOGIES
 
