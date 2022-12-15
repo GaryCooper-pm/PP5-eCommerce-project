@@ -199,7 +199,7 @@ The main colours are Light and dark blue with yellow accents and text.
     - `Any name`
     - `Any postcode`
 
-![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe+payment.JPG)
+![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe_payment.JPG)
 
 ### SOCIAL MEDIA MARKETING
 

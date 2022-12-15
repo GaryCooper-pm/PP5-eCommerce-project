@@ -18,8 +18,8 @@ if os.path.isfile("env.py"):
     import env  # noqa
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 if DEBUG == 'True':
