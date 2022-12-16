@@ -214,6 +214,19 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe_payment.JPG)
 
+- Custom Error Pages;
+  - Custom 500 Internal Server Error page.
+    - If there is an issue with the database the custom page appears with a button linking back to the home page.
+
+![Custom 500 Internal Server Error Page](static/assets/images/README-images/500_page.JPG)
+
+  - Custom 404 Page Not Found page.
+    - If the user attempts to input an incorrect URL the custom page appears with a button linking back to the home page.
+
+![Custom 404 Page Not Found error Page](static/assets/images/README-images/404_page.JPG)
+
+  - Custom 403 Forbidden and 405 Method Not Allowed pages have also been created.
+
 ### SOCIAL MEDIA MARKETING
 
 - For the purposes of the assessment mock Facebook and Twitter pages were created to represent the company on social media platforms. 
@@ -284,7 +297,10 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ## Manual Testing
 
-## Testing User Stories
+## Manual Testing User Stories
+
+- I tested all user inputs systematically to ensure results matched against expected results.
+- Any unexpected outcomes were fixed
 
 ## Testing Admin User Stories
 
@@ -292,13 +308,16 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ### HTML
 
--  when passing through the official [W3C validator]()
+- When passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fblueturtle.herokuapp.com%2F) I received the following;
+  - 1 x Info, pertaining to a trailing slash.
+  - 2 x Warning, pertaining to `type` for JavaScript resources.
+  - 1 x Warning, pertaining to Section lacking `h2`-`h6` element.
 
 ![HTML check](static/assets/images/README-images/html_check.JPG)
 
 ### CSS
 
--  when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=)
+-  No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=)
 
 ![CSS check](static/assets/images/README-images/css_check.JPG)
 
