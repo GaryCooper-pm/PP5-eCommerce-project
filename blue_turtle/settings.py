@@ -226,7 +226,7 @@ else:
 # STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY')
 # STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET')
 # DOMAIN_URL = os.environ.get('DOMAIN_URL')
-DOMAIN_URL = 'http://localhost:8000/'
+DOMAIN_URL = 'https://blueturtle.herokuapp.com/success/'
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51LytJoHvypBSI4oFecpd2b6Yw6cfdjf2ZCJJ6ldrGcr2F9o8lIfV4kVqsD9g6b523WawjKkoMNrj30Na2cOjm1S100Zl6cqwcB'
 STRIPE_SECRET_KEY = 'sk_test_51LytJoHvypBSI4oFUZyyILUEDW9NKVCJi4cB0IpiEbt4QgkFs6XaA8wne0N0FyNGTKPkbhXAh98LWIkUdlUky6Rp00PhHQtgwH'
 
