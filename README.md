@@ -214,6 +214,11 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe_payment.JPG)
 
+- Purchase Success Page;
+  - Once the Stripe has completed the purchase the user is re-directed to a 'Purchase Success' page.
+
+![Purchase Success Page](static/assets/images/README-images/purchase_success_page.JPG)
+
 - Custom Error Pages;
   - Custom 500 Internal Server Error page.
     - If there is an issue with the database the custom page appears with a button linking back to the home page.
