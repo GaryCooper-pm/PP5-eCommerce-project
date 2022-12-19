@@ -1,9 +1,9 @@
 ![pixelmixel logo](static/assets/images/README-images/pixelmixel.png "Pixel Mixel Logo")
 
-Welcome to my fifth Code Institute diploma project.
+Welcome to my Fifth Code Institute Diploma Project.
 
 # INTRODUCTION AND OVERVIEW
-For my fifth project I decided to create a bicycle service eCommerce store.
+For my Fifth Project I decided to create a bicycle service eCommerce store.
 
 '**Blue Turtle**' is a simple eCommerce store where users can register an account with Blue Turtle Bicycle Servicing and purchase specific services.
 
