@@ -215,7 +215,7 @@ The main colours are Light and dark blue with yellow accents and text.
 ![Stripe Payment/Checkout Page](static/assets/images/README-images/stripe_payment.JPG)
 
 - Purchase Success Page;
-  - Once the Stripe has completed the purchase the user is re-directed to a 'Purchase Success' page.
+  - Once the Stripe payment process has completed the purchase the user is re-directed to a 'Purchase Success' page.
 
 ![Purchase Success Page](static/assets/images/README-images/purchase_success_page.JPG)
 
@@ -263,12 +263,12 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ## FRAMEWORKS LIBRARIES AND PROGRAMS USED
 
+- [Amazon AWS](https://aws.amazon.com/)
+  - Amazon AWS was used to store the project's images and static files.
 - [Balsamiq](https://balsamiq.com/)
   - Balsamiq was used to make desktop/mobile mockups in order to visualise the project.
 - [Bootstrap](https://getbootstrap.com/)
   - Bootstrap template.
-- [Amazon AWS](https://aws.amazon.com/)
-  - Amazon AWS was used to store the project's images and static files.
 - [Django](https://www.djangoproject.com/)
   - Django was used to build the app.
 - [Django Allauth](https://django-allauth.readthedocs.io/en/latest/overview.html/)
@@ -301,6 +301,8 @@ The main colours are Light and dark blue with yellow accents and text.
 # TESTING
 
 ## Manual Testing
+
+- The full manual testing script can be located on [Google Sheets](https://docs.google.com/spreadsheets/d/1m434l33zLwwjbTr-pIgKVokYfBvTIMgSEOLZ7pRaUjk/edit#gid=0)
 
 ## Manual Testing User Stories
 
