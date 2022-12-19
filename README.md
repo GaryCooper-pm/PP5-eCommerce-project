@@ -44,7 +44,6 @@ For my fifth project I decided to create a bicycle service eCommerce store.
 - [TESTING](#testing)
     - [Manual testing](#manual-testing)
     - [Testing User Stories](#testing-user-stories)
-    - [Testing Admin User Stories](#testing-admin-user-stories)
     - [Validation](#validation)
     - [Unsolved bugs and problems](#unsolved-bugs-and-problems)
     - [Resolved bugs and problems](#resolved-bugs-and-problems)
