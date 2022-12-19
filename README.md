@@ -310,7 +310,7 @@ The main colours are Light and dark blue with yellow accents and text.
 - All aspects of the site work as expected.
   - Each page loads quickly
   - Site features are working with no problems with CRUD functionality.
-    - Logging in or out, signing up, paying for each service etc.
+  - Logging in or out, signing up, paying for each service etc.
   - All buttons and links work quickly with respective redirects to the next page.
   - Individual Services URL's load correctly on the Services page
   - The Sign Up form sends an automated email from the custom Blue Turtle Gmail email account to the user to verify the email address.
