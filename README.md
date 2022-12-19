@@ -303,7 +303,7 @@ The main colours are Light and dark blue with yellow accents and text.
 
 - The full manual testing script can be located on [Google Sheets](https://docs.google.com/spreadsheets/d/1m434l33zLwwjbTr-pIgKVokYfBvTIMgSEOLZ7pRaUjk/edit#gid=0)
 
-## Manual Testing User Stories
+## Testing User Stories
 
 - I tested all user inputs systematically to ensure results matched against expected results.
 - Any unexpected outcomes were fixed
