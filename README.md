@@ -359,6 +359,9 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ## Resolved bugs and problems
 
+- While testing on Apple Safari browser, I identified a bug where if dark mode was switched on the form input was not displaying any text at all.
+- This was a relatively easy fix to implement by simply setting text-input colour to #000 (black).
+
 
 ## FUTURE DEVELOPMENT
 
