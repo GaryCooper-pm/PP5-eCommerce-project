@@ -159,10 +159,12 @@ The main colours are Light and dark blue with yellow accents and text.
 
 - The Registered User Profile Page;
   - Once a user has registered and confirmed their account they can login and view their individual profile page.
+  - The page also displays a purchase history.
   - The user is also able to edit and update their personal details.
   - The user can also delete their profile.
 
 ![Profile Page](static/assets/images/README-images/profile_page.JPG)
+![Service History](static/assets/images/README-images/service_history.JPG)
 ![Edit Profile Page](static/assets/images/README-images/edit_profile_page.JPG)
 ![Delete Profile Page](static/assets/images/README-images/delete_profile_page.JPG)
 
@@ -334,9 +336,15 @@ The main colours are Light and dark blue with yellow accents and text.
 
 ### PYTHON / PEP8 Online Validation
 
--  when passing through the [PEP8online check.](http://pep8online.com/)
+-  Previously I passed all code through the [PEP8online check.](http://pep8online.com/) website however the site appears to be down so have utilised the workaround as detailed on SLACK
 
-![pep8 check](static/assets/images/README-images/pep8_check.JPG)
+Taken from [This Thread](https://code-institute-room.slack.com/archives/CPCT0MBKL/p1664380977854349)
+As a workaround, you can add a PEP8 validator to your Gitpod Workspace directly by following these steps:
+- Run the command `pip3 install pycodestyle`  Note that this extension may already be installed, in which case this command will do nothing.
+- In your workspace, press Ctrl+Shift+P (or Cmd+Shift+P on Mac).
+- Type the word `linter` into the search bar that appears, and click on `Python: Select Linter` from the filtered results.
+- Select `pycodestyle` from the list.
+- PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
 
 
 ## GOOGLE Lightouse Testing

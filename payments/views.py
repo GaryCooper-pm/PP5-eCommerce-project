@@ -21,10 +21,7 @@ class SuccessView(TemplateView):
     """ Retrieves the payments success from stripe
         then adds the purchased service to the users Service History """
     def dispatch(self, request, *args, **kwargs):
-        # parse the request here ie.
-        # self.foo = request.GET.get('foo', False)
         self.test_func()
-        # call the view
         return super(SuccessView, self).dispatch(request, *args, **kwargs)
     template_name = 'payments/success.html'
 
@@ -37,17 +34,8 @@ class SuccessView(TemplateView):
         ServiceHistory.objects.create(booked_by=self.request.user, service_type=service, order_date=order_date)
 
         try:
-            # session = stripe.checkout.Session.retrieve(session_id)
-            # if session['payment_status'] == 'paid':
-            # line_item = stripe.checkout.Session.list_line_items(session_id, limit=1)  # noqa
-            # service_name = line_item['data'][0].description
-
             return True
-            # else:
-            #     return False
         except Exception as e:
-            # noqa
-            # print("e-----------------> ",e)
             return False
 
 
