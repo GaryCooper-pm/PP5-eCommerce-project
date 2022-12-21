@@ -366,13 +366,10 @@ As a workaround, you can add a PEP8 validator to your Gitpod Workspace directly 
 ![Responsive TFS](static/assets/images/README-images/responsiveness.JPG)
 
 
-## Unsolved bugs and problems
-
-
 ## Resolved bugs and problems
 
 - While testing on Apple Safari browser, I identified a bug where if dark mode was switched on the form input was not displaying any text at all.
-- This was a relatively easy fix to implement by simply setting text-input colour to #000 (black).
+  - This was a relatively easy fix to implement by simply setting text-input colour to #000 (black).
 
 
 ## FUTURE DEVELOPMENT
