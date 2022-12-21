@@ -59,7 +59,6 @@ def stripe_config(request):
 def create_checkout_session(request):
 
     if request.method == 'GET':
-        # domain_url = settings.DOMAIN_URL
         domain_url = settings.DOMAIN_URL
         print("domain url---->> ", domain_url)
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -68,7 +67,6 @@ def create_checkout_session(request):
         service = Services.objects.get(pk=request.GET['pk'])
         print("dfgdfhdfhgf", service.price)
         try:
-            # print("domain url---->> ",domain_url ,'payments/success?session_id=2133&s/ervice_name=')
             checkout_session = stripe.checkout.Session.create(
 
                 success_url=domain_url + 'payments/success/?session_id={}&service_name={}'.format(str(random.randint(100, 100000000)), service.service_name),  # noqa
@@ -77,9 +75,8 @@ def create_checkout_session(request):
                 mode='payment',
                 line_items=[
                     {
-                        # 'price': service.price,
                         'quantity': 1,
-                         'price_data': {
+                        'price_data': {
                         'currency': 'GBP',
                         'unit_amount': int(service.price*100),
                         'product_data': {
@@ -90,14 +87,11 @@ def create_checkout_session(request):
                     }
                     }
                 ],
-                # print("line_items",line_items)
 
             )
 
-            # print("checkout_session",checkout_session)
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as e:
-            # print("data----------->> ",e)
             return JsonResponse({'error': str(e)})
 
 
@@ -105,7 +99,8 @@ def create_checkout_session(request):
 @csrf_exempt
 def stripe_webhook(request):
     stripe.api_key = settings.STRIPE_SECRET_KEY
-    wh_secret = settings.STRIPE_WH_SECRET
+    endpoint_secret = settings.STRIPE_ENDPOINT_SECRET
+    # wh_secret = settings.STRIPE_WH_SECRET
     payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
     event = None
