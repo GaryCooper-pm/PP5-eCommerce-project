@@ -20,24 +20,34 @@ class PaymentsView(TemplateView):
 class SuccessView(TemplateView):
     """ Retrieves the payments success from stripe
         then adds the purchased service to the users Service History """
+    def dispatch(self, request, *args, **kwargs):
+        # parse the request here ie.
+        # self.foo = request.GET.get('foo', False)
+        self.test_func()
+        # call the view
+        return super(SuccessView, self).dispatch(request, *args, **kwargs)
     template_name = 'payments/success.html'
 
     def test_func(self):
         stripe.api_key = settings.STRIPE_SECRET_KEY
 
-        session_id = self.request.GET['session_id']
+        service_name = self.request.GET.get('service_name', '')
+        service = Services.objects.get(service_name=service_name)
+        order_date = datetime.datetime.now()
+        ServiceHistory.objects.create(booked_by=self.request.user, service_type=service, order_date=order_date)
+
         try:
-            session = stripe.checkout.Session.retrieve(session_id)
-            if session['payment_status'] == 'paid':
-                line_item = stripe.checkout.Session.list_line_items(session_id, limit=1)  # noqa
-                service_name = line_item['data'][0].description
-                service = Services.objects.get(service_name=service_name)
-                order_date = datetime.datetime.now()
-                ServiceHistory.objects.create(booked_by=self.request.user, service_type=service, order_date=order_date)  # noqa
-                return True
-            else:
-                return False
-        except:  # noqa
+            # session = stripe.checkout.Session.retrieve(session_id)
+            # if session['payment_status'] == 'paid':
+            # line_item = stripe.checkout.Session.list_line_items(session_id, limit=1)  # noqa
+            # service_name = line_item['data'][0].description
+
+            return True
+            # else:
+            #     return False
+        except Exception as e:
+            # noqa
+            # print("e-----------------> ",e)
             return False
 
 
@@ -70,10 +80,10 @@ def create_checkout_session(request):
         service = Services.objects.get(pk=request.GET['pk'])
         print("dfgdfhdfhgf", service.price)
         try:
-            print("domain url---->> ", domain_url, 'payments/success?session_id=2133')
+            # print("domain url---->> ",domain_url ,'payments/success?session_id=2133&s/ervice_name=')
             checkout_session = stripe.checkout.Session.create(
 
-                success_url=domain_url + 'payments/success/?session_id='+str(random.randint(100, 100000000)),  # noqa
+                success_url=domain_url + 'payments/success/?session_id={}&service_name={}'.format(str(random.randint(100, 100000000)), service.service_name),  # noqa
                 cancel_url=domain_url + 'payments/cancelled/',
                 payment_method_types=['card'],
                 mode='payment',
@@ -96,10 +106,10 @@ def create_checkout_session(request):
 
             )
 
-            print("checkout_session", checkout_session)
+            # print("checkout_session",checkout_session)
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as e:
-            print("data----------->> ", e)
+            # print("data----------->> ",e)
             return JsonResponse({'error': str(e)})
 
 
